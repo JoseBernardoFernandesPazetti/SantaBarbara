@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loja | Santa Bárbara</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Santa Bárbara
+    </div>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="loja.html">Loja</a>
+
+        <a href="sobre.html">Sobre</a>
+
+        <a href="contato.html">Contato</a>
+
+        <a href="carrinho.html">
+            Carrinho (<span id="contador-carrinho">0</span>)
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="titulo-pagina">
+
+    <h1>Nossa Loja</h1>
+
+    <p>Produtos artesanais feitos com qualidade e dedicação.</p>
+
+</section>
+
+<section class="produtos">
+
+    <div class="produto">
+
+        <img src="imagens/produto1.jpg" alt="Tábua de Churrasco">
+
+        <h2>Tábua Premium</h2>
+
+        <p>Madeira maciça com acabamento artesanal.</p>
+
+        <span>R$ 189,90</span>
+
+        <button onclick="adicionarCarrinho('Tábua Premium',189.90,'imagens/produto1.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="imagens/produto2.jpg" alt="Adega">
+
+        <h2>Adega para Vinhos</h2>
+
+        <p>Capacidade para 6 garrafas.</p>
+
+        <span>R$ 329,90</span>
+
+        <button onclick="adicionarCarrinho('Adega para Vinhos',329.90,'imagens/produto2.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="imagens/produto3.jpg" alt="Kit Churrasco">
+
+        <h2>Kit Churrasco</h2>
+
+        <p>Faca, garfo e chaira em inox.</p>
+
+        <span>R$ 279,90</span>
+
+        <button onclick="adicionarCarrinho('Kit Churrasco',279.90,'imagens/produto3.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="imagens/produto4.jpg" alt="Petisqueira">
+
+        <h2>Petisqueira</h2>
+
+        <p>Ideal para servir petiscos e frios.</p>
+
+        <span>R$ 149,90</span>
+
+        <button onclick="adicionarCarrinho('Petisqueira',149.90,'imagens/produto4.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="imagens/produto5.jpg" alt="Suporte para Espetos">
+
+        <h2>Suporte para Espetos</h2>
+
+        <p>Produzido em madeira de alta qualidade.</p>
+
+        <span>R$ 239,90</span>
+
+        <button onclick="adicionarCarrinho('Suporte para Espetos',239.90,'imagens/produto5.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="imagens/produto6.jpg" alt="Porta Temperos">
+
+        <h2>Porta Temperos</h2>
+
+        <p>Organização e elegância para sua cozinha.</p>
+
+        <span>R$ 99,90</span>
+
+        <button onclick="adicionarCarrinho('Porta Temperos',99.90,'imagens/produto6.jpg')">
+
+            Adicionar ao Carrinho
+
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Santa Bárbara - Todos os direitos reservados.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

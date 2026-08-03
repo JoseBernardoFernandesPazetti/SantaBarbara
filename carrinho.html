@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrinho | Santa Bárbara</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Santa Bárbara
+    </div>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="loja.html">Loja</a>
+
+        <a href="sobre.html">Sobre</a>
+
+        <a href="contato.html">Contato</a>
+
+        <a href="carrinho.html">
+            Carrinho (<span id="contador-carrinho">0</span>)
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="titulo-pagina">
+
+    <h1>Meu Carrinho</h1>
+
+    <p>Confira seus produtos antes de finalizar.</p>
+
+</section>
+
+<section class="pagina-carrinho">
+
+    <div id="lista-carrinho"></div>
+
+    <h2 id="total">Total: R$ 0,00</h2>
+
+    <div style="margin-top:30px; display:flex; gap:15px; flex-wrap:wrap;">
+
+        <button class="botao" onclick="limparCarrinho()">
+            Limpar Carrinho
+        </button>
+
+        <button class="botao" onclick="finalizarWhatsapp()">
+            Finalizar pelo WhatsApp
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Santa Bárbara - Todos os direitos reservados.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

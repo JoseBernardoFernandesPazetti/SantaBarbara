@@ -1,0 +1,733 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#1f1f1f;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    color:#ff9800;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:#ff9800;
+
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+
+    height:85vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../imagens/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.banner-conteudo{
+
+    color:white;
+
+    width:90%;
+
+    max-width:700px;
+
+}
+
+.banner-conteudo h1{
+
+    font-size:65px;
+
+    margin-bottom:20px;
+
+}
+
+.banner-conteudo p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   BOTÃO
+=========================== */
+
+.botao{
+
+    display:inline-block;
+
+    background:#ff9800;
+
+    color:white;
+
+    padding:16px 42px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.botao:hover{
+
+    transform:translateY(-3px);
+
+    background:#e68900;
+
+}
+
+/* ===========================
+   DESTAQUES
+=========================== */
+
+.destaques{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+}
+
+.destaques h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    height:250px;
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:20px 20px 10px;
+
+}
+
+.card p{
+
+    padding:0 20px 25px;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   EMPRESA
+=========================== */
+
+.empresa{
+
+    background:white;
+
+    padding:80px 20px;
+
+}
+
+.empresa-texto{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.empresa-texto h2{
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.empresa-texto p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#1f1f1f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:70px;
+
+}
+/* ===========================
+   TÍTULO DAS PÁGINAS
+=========================== */
+
+.titulo-pagina{
+
+    text-align:center;
+
+    padding:70px 20px 40px;
+
+}
+
+.titulo-pagina h1{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.titulo-pagina p{
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   PRODUTOS
+=========================== */
+
+.produtos{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:0 auto 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.produto{
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.produto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.produto img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.produto h2{
+
+    padding:20px 20px 10px;
+
+    font-size:24px;
+
+}
+
+.produto p{
+
+    padding:0 20px;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+.produto span{
+
+    display:block;
+
+    padding:20px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#ff9800;
+
+}
+
+.produto button{
+
+    width:90%;
+
+    margin:0 5% 25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#222;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.produto button:hover{
+
+    background:#ff9800;
+
+}
+
+/* ===========================
+   CARRINHO
+=========================== */
+
+.pagina-carrinho{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:70px auto;
+
+}
+
+.item-carrinho{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.item-carrinho button{
+
+    background:#d62828;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.item-carrinho button:hover{
+
+    background:#b71c1c;
+
+}
+
+#total{
+
+    text-align:right;
+
+    margin-top:30px;
+
+    font-size:32px;
+
+    color:#ff9800;
+
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+.sobre{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.sobre img{
+
+    width:100%;
+
+    border-radius:12px;
+
+}
+
+.sobre h2{
+
+    margin-bottom:20px;
+
+    font-size:36px;
+
+}
+
+.sobre p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   CONTATO
+=========================== */
+
+.contato{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:70px auto;
+
+}
+
+.contato form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contato input{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.contato textarea{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    min-height:180px;
+
+    resize:vertical;
+
+    font-size:16px;
+
+}
+
+.contato button{
+
+    background:#ff9800;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.contato button:hover{
+
+    background:#e68900;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .banner-conteudo h1{
+
+        font-size:45px;
+
+    }
+
+    .banner-conteudo p{
+
+        font-size:18px;
+
+    }
+
+    .sobre{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #total{
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    nav{
+
+        gap:15px;
+
+    }
+
+    nav a{
+
+        font-size:15px;
+
+    }
+
+    .banner{
+
+        height:70vh;
+
+    }
+
+    .banner-conteudo h1{
+
+        font-size:34px;
+
+    }
+
+    .titulo-pagina h1{
+
+        font-size:36px;
+
+    }
+
+    .item-carrinho{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+}
